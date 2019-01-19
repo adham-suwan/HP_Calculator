@@ -1,0 +1,109 @@
+﻿<div class="jumbotron">
+    <h1>HP Calculator</h1>
+    <p class="lead">This project has been built using ASP.NET MVC.</p>
+</div>
+<div class="row">
+    First Number <input type="text" id="firstNoTxt" value="">
+    <br>
+    <br>
+    Operation <select id="optDropdown"></select>
+    <br>
+    <br>
+    Second Number <input type="text" id="secondNoTxt" value="">
+    <br>
+    <br>
+    <button id="btnSub_1">Calculate V1</button><button id="btnSub_2">Calculate V2</button>
+    <br>
+    <br>
+    Calculation Result <input type="text" id="resultTxt" value="" readonly>
+    <br>
+    <br>
+    Full JSON Result <textarea id="resultJson" rows="5" cols="500" readonly></textarea>
+    <br>
+    <br>
+</div>
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+        var select = $('#optDropdown');
+        $.ajax({
+            type: 'GET',
+            url: '/api/v1/calculation',
+            success: function (data) {
+                var htmlOptions = [];
+                if (data.length) {
+                    for (item in data) {
+                        html = '<option value="' + data[item] + '">' + data[item] + '</option>';
+                        htmlOptions[htmlOptions.length] = html;
+                    }
+                    select.empty().append(htmlOptions.join(''));
+                }
+            },
+            error: function (error) {
+                alert(error.responseJSON.message);
+            }
+        })
+    });
+
+
+    $('#btnSub_1').click(function () {
+        var formData =
+            {
+                'FirstNo': $('#firstNoTxt').val(),
+                'SecondNo': $('#secondNoTxt').val(),
+                'Operation': $('#optDropdown').val()
+            };
+        $.ajax({
+            type: 'POST',
+            url: '/api/v1/calculation',
+            cache: false,
+            data: formData,
+            success: function (data) {
+                var result = JSON.parse(data);
+                $('#resultTxt').val(result["VALUE"]);
+                $('#resultJson').val(data);
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(errorThrown + ' : ' + XMLHttpRequest.responseText);
+
+                $('#resultTxt').val("");
+                $('#resultJson').val("");
+            }
+        });
+    });
+
+    $('#btnSub_2').click(function () {
+        var formData =
+            {
+                'FirstNo': $('#firstNoTxt').val(),
+                'SecondNo': $('#secondNoTxt').val(),
+                'Operation': $('#optDropdown').val()
+            };
+        $.ajax({
+            type: 'POST',
+            url: '/api/v2/calculation',
+            cache: false,
+            data: formData,
+            success: function (data) {
+                var result = JSON.parse(data);
+                $('#resultTxt').val(result["VALUE"]);
+                $('#resultJson').val(data);
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(errorThrown + ' : ' + XMLHttpRequest.responseText);
+
+                $('#resultTxt').val("");
+                $('#resultJson').val("");
+            }
+        });
+    });
+
+</script>

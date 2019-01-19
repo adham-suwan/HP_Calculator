@@ -1,0 +1,10 @@
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\bin\Debug\HpCalculator.Design.dll
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\bin\Debug\HpCalculator.Design.pdb
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\obj\Debug\HpCalculator.Design.dll
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\obj\Debug\HpCalculator.Design.pdb
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\obj\Debug\HpCalculator.Middleware.csprojResolveAssemblyReference.cache
+C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\bin\Debug\HpCalculator.Middleware.dll
+C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\bin\Debug\HpCalculator.Middleware.pdb
+C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.dll
+C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.pdb
+C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.csprojResolveAssemblyReference.cache

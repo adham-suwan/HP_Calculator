@@ -1,0 +1,5 @@
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\obj\Debug\HpCalculator.Design.csprojResolveAssemblyReference.cache
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\bin\Debug\HpCalculator.Design.dll
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\bin\Debug\HpCalculator.Design.pdb
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\obj\Debug\HpCalculator.Design.dll
+c:\users\adham.suwan\documents\visual studio 2015\Projects\HpCalculator\HpCalculator.Design\obj\Debug\HpCalculator.Design.pdb
