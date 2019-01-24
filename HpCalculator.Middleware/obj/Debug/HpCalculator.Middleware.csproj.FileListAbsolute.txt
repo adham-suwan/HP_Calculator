@@ -8,3 +8,9 @@ C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalcul
 C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.dll
 C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.pdb
 C:\Users\Adham.Suwan\Documents\Visual Studio 2015\Projects\HpCalculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.csprojResolveAssemblyReference.cache
+C:\Users\user\Source\Repos\HP_Calculator\HpCalculator.Middleware\bin\Debug\HpCalculator.Middleware.dll
+C:\Users\user\Source\Repos\HP_Calculator\HpCalculator.Middleware\bin\Debug\HpCalculator.Middleware.pdb
+C:\Users\user\Source\Repos\HP_Calculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\HP_Calculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\HP_Calculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.dll
+C:\Users\user\Source\Repos\HP_Calculator\HpCalculator.Middleware\obj\Debug\HpCalculator.Middleware.pdb

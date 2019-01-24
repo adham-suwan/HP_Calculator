@@ -12,7 +12,7 @@
     Second Number <input type="text" id="secondNoTxt" value="">
     <br>
     <br>
-    <button id="btnSub_1">Calculate V1</button><button id="btnSub_2">Calculate V2</button>
+    <button id="btnSub_1">Calculate V1</button><button id="btnSub_2">Calculate V2</button><button id="btnSub_3">Calculate V3</button><button id="btnSub_4">Calculate V4</button>
     <br>
     <br>
     Calculation Result <input type="text" id="resultTxt" value="" readonly>
@@ -89,6 +89,60 @@
         $.ajax({
             type: 'POST',
             url: '/api/v2/calculation',
+            cache: false,
+            data: formData,
+            success: function (data) {
+                var result = JSON.parse(data);
+                $('#resultTxt').val(result["VALUE"]);
+                $('#resultJson').val(data);
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(errorThrown + ' : ' + XMLHttpRequest.responseText);
+
+                $('#resultTxt').val("");
+                $('#resultJson').val("");
+            }
+        });
+    });
+
+    $('#btnSub_3').click(function () {
+        var formData =
+        {
+            'FirstNo': $('#firstNoTxt').val(),
+            'SecondNo': $('#secondNoTxt').val(),
+            'Operation': $('#optDropdown').val()
+        };
+        $.ajax({
+            type: 'POST',
+            url: '/api/v3/calculation',
+            cache: false,
+            data: formData,
+            success: function (data) {
+                var result = JSON.parse(data);
+                $('#resultTxt').val(result["VALUE"]);
+                $('#resultJson').val(data);
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(errorThrown + ' : ' + XMLHttpRequest.responseText);
+
+                $('#resultTxt').val("");
+                $('#resultJson').val("");
+            }
+        });
+    });
+
+    $('#btnSub_4').click(function () {
+        var formData =
+        {
+            'FirstNo': $('#firstNoTxt').val(),
+            'SecondNo': $('#secondNoTxt').val(),
+            'Operation': $('#optDropdown').val()
+        };
+        $.ajax({
+            type: 'POST',
+            url: '/api/v4/calculation',
             cache: false,
             data: formData,
             success: function (data) {

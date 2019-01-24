@@ -13,9 +13,9 @@ namespace HpCalculator.Middleware
             arguments.Add("secondNumber", y);
             arguments.Add("operation", operation);
 
-            var resultBuilder = new ResultBuilder();
+            var result = new ResultBuilder();
 
-            return resultBuilder.Build(arguments);
+            return result.Build(arguments);
 
         }
 
@@ -26,9 +26,42 @@ namespace HpCalculator.Middleware
             arguments.Add("secondNumber", y);
             arguments.Add("operation", operation);
 
-            var resultBuilder = new ResultWithColor(new ResultBuilder());
+            var basicResult = new ResultBuilder();
+            var colorAddedResult = new ResultWithColor(basicResult);
 
-            return resultBuilder.Build(arguments);
+            return colorAddedResult.Build(arguments);
+
+        }
+
+
+        public static Dictionary<string, object> CalculateWithPrime(int x, int y, ACTION operation)
+        {
+            var arguments = new Dictionary<string, object>();
+            arguments.Add("firstNumber", x);
+            arguments.Add("secondNumber", y);
+            arguments.Add("operation", operation);
+
+            var basicResult = new ResultBuilder();
+            var primeAddedResult = new ResultWithPrime(basicResult);
+
+            return primeAddedResult.Build(arguments);
+
+        }
+
+        public static Dictionary<string, object> CalculateWithColorAndPrime(int x, int y, ACTION operation)
+        {
+            var arguments = new Dictionary<string, object>();
+            arguments.Add("firstNumber", x);
+            arguments.Add("secondNumber", y);
+            arguments.Add("operation", operation);
+
+            var basicResult = new ResultBuilder();
+            var colorAddedResult = new ResultWithColor(basicResult);
+            var primeAddedResult = new ResultWithPrime(colorAddedResult);
+
+
+
+            return primeAddedResult.Build(arguments);
 
         }
     }

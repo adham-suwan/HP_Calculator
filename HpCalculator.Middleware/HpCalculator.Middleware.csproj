@@ -51,6 +51,7 @@
     <Compile Include="Result_Decorator\IResultBuilder.cs" />
     <Compile Include="Result_Decorator\ResultBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result_Decorator\ResultWithPrime.cs" />
     <Compile Include="Result_Decorator\ResultWithColor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,7 +13,8 @@
         public enum RESULT_ATTR
         {
             VALUE,
-            COLOR
+            COLOR,
+            PRIME
         };
     }
 }
